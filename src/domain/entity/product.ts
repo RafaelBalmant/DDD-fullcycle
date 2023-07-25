@@ -29,6 +29,10 @@ export default class Product {
         return this._name;
     }
 
+    get id(): string {
+        return this._id;
+    }
+
     validate() {
         if (!this._id.length) {
             throw new Error("Id is required");
